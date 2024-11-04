@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+</head>
+<body>
+
+    <!-- Title Section -->
+    <h1>Let's Lookup some Books</h1>
+    <h3> Please enter a book name:</h3>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+        <input type="text" id="bookInput" placeholder="Enter book title" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Loading Message (hidden initially) -->
+    <h2 id="loadingMessage" style="display: none;">Please wait while we load the books</h2>
+
+    <!-- Results Table (hidden initially) -->
+    <table id="resultsTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+    </table>
+
+    <script src="books.js"></script>
+</body>
+</html>
